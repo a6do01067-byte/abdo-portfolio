@@ -1,0 +1,143 @@
+/* ==========================================
+   إعدادات عامة وتحسينات الخطوط
+   ========================================== */
+body {
+    font-family: 'Cairo', sans-serif;
+    color: #333333;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* ==========================================
+   شريط الملاحة (Navbar)
+   ========================================== */
+.custom-navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    background-color: #1a1e21 !important;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.custom-navbar .nav-link {
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+    color: #0d6efd !important;
+}
+
+/* ==========================================
+   قسم البداية (Hero Section)
+   ========================================== */
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.hero-avatar {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 3px solid #0d6efd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px rgba(13, 110, 253, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.hero-avatar:hover {
+    transform: scale(1.05);
+}
+
+/* ==========================================
+   العناوين الرئيسية للأقسام
+   ========================================== */
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #0d6efd;
+    border-radius: 2px;
+}
+
+/* ==========================================
+   قسم المهارات (Skills)
+   ========================================== */
+.skill-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.icon-wrapper {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================
+   قسم الأعمال (Projects)
+   ========================================== */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+.project-img {
+    height: 180px;
+}
+
+/* ==========================================
+   قسم التواصل (Contact)
+   ========================================== */
+.contact-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* تخصيص حقول المدخلات */
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
